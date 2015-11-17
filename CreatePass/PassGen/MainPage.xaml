@@ -77,7 +77,7 @@
                 <CheckBox Name="cb_Alphanum" Content="Alphanumeric" Grid.Column="1" Grid.Row="8" Checked="cb_Chars_Checked" Unchecked="cb_Chars_Checked" IsEnabled="False" Grid.ColumnSpan="2"></CheckBox>
                 <CheckBox Name="cb_Numbers" Content="Numeric" Grid.Column="1" Grid.Row="9" Checked="cb_Chars_Checked"  Unchecked="cb_Chars_Checked" IsEnabled="False" Grid.ColumnSpan="2"></CheckBox>
                 <CheckBox Name="cb_Special" Content="Special" Grid.Column="1" Grid.Row="10" Checked="cb_Chars_Checked" Unchecked="cb_Chars_Checked" Grid.ColumnSpan="2"></CheckBox>
-                <Button Name="btn_ToggelSalt" Content="Show Salt" Grid.Column="1" Grid.Row="12" HorizontalAlignment="Stretch" Click="btn_ToggelSalt_Click" Grid.ColumnSpan="2"/>
+                <Button Name="btn_ToggleSalt" Content="Show Salt" Grid.Column="1" Grid.Row="12" HorizontalAlignment="Stretch" Click="btn_ToggleSalt_Click" Grid.ColumnSpan="2"/>
                 <TextBox Name="txt_Salt" Grid.Column="1" Grid.Row="14" Visibility="Collapsed" Grid.ColumnSpan="2"/>
                 <Button Name="btn_SaveSalt" Content="Save" Grid.Column="1" Grid.Row="16" HorizontalAlignment="Stretch" Click="btn_SaveSalt_Click" Visibility="Collapsed" Grid.ColumnSpan="2"/>
                 <HyperlinkButton Grid.Row="18" Grid.ColumnSpan="3" Name="url_Githublink" Content="Github Code" NavigateUri="https://github.com/AndHell/CreatePass"></HyperlinkButton>

@@ -106,15 +106,15 @@ namespace PassGen
         private string BuildSingleString(string part1, string part2, string part3)
         {
            var length = GetLongestString(part1, part2, part3);
-            var singelstring = "";
+            var singlestring = "";
             for (int i = 0; i < length; i++)
             {
-                singelstring += GetCharAtIndex(part1, i);
-                singelstring += GetCharAtIndex(part2, i);
-                singelstring += GetCharAtIndex(part3, i);
+                singlestring += GetCharAtIndex(part1, i);
+                singlestring += GetCharAtIndex(part2, i);
+                singlestring += GetCharAtIndex(part3, i);
             }
 
-            return singelstring;
+            return singlestring;
         }
 
         private string GetCharAtIndex(string masterkey, int i)

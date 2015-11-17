@@ -74,19 +74,19 @@ namespace PassGen
             passGenerator.UpdatePwChars(settings.UseNumChars, settings.UseAlphaNumChars, settings.UseSpecialChars);
         }
 
-        private void btn_ToggelSalt_Click(object sender, RoutedEventArgs e)
+        private void btn_ToggleSalt_Click(object sender, RoutedEventArgs e)
         {
             if (txt_Salt.Visibility == Visibility.Collapsed)
             {
                 txt_Salt.Visibility = Visibility.Visible;
                 btn_SaveSalt.Visibility = Visibility.Visible;
-                btn_ToggelSalt.Content = "Hide Salt";
+                btn_ToggleSalt.Content = "Hide Salt";
             }
             else
             {
                 txt_Salt.Visibility = Visibility.Collapsed;
                 btn_SaveSalt.Visibility = Visibility.Collapsed;
-                btn_ToggelSalt.Content = "Show Salt";
+                btn_ToggleSalt.Content = "Show Salt";
             }
         }
 
