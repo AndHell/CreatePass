@@ -1,8 +1,11 @@
 ﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.ApplicationModel.Resources;
 using Windows.ApplicationModel.DataTransfer;
 using System;
 using Windows.UI;
+using Windows.UI.Core;
+using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -15,7 +18,7 @@ namespace PassGen
     {
         Settings settings;
         PasswordGeneration passGenerator;
-        
+        ResourceLoader rsLoader;
 
         public MainPage()
         {
@@ -34,13 +37,17 @@ namespace PassGen
             txt_Salt.Text = settings.Salt;
             
             passGenerator = new PasswordGeneration(settings.PwLength,settings.Salt, settings.UseNumChars, settings.UseAlphaNumChars, settings.UseSpecialChars);
+            rsLoader = new ResourceLoader();
+      
         }
+        
+        
 
         private async void btn_Generate_Click(object sender, RoutedEventArgs e)
         {
             if (txt_MasterKey.Password.Length < 8)
             {
-                var test = new Windows.UI.Popups.MessageDialog("Your Master password needs more than 8 characters.");
+                var test = new Windows.UI.Popups.MessageDialog(rsLoader.GetString("MasterKeyToShortDialog"));
                 await test.ShowAsync();
                 return;
             }
@@ -74,19 +81,19 @@ namespace PassGen
             passGenerator.UpdatePwChars(settings.UseNumChars, settings.UseAlphaNumChars, settings.UseSpecialChars);
         }
 
-        private void btn_ToggleSalt_Click(object sender, RoutedEventArgs e)
+        private void btn_ToggelSalt_Click(object sender, RoutedEventArgs e)
         {
             if (txt_Salt.Visibility == Visibility.Collapsed)
             {
                 txt_Salt.Visibility = Visibility.Visible;
                 btn_SaveSalt.Visibility = Visibility.Visible;
-                btn_ToggleSalt.Content = "Hide Salt";
+                btn_ToggelSalt.Content = rsLoader.GetString("sett_txb_ShowSalt_hide");
             }
             else
             {
                 txt_Salt.Visibility = Visibility.Collapsed;
                 btn_SaveSalt.Visibility = Visibility.Collapsed;
-                btn_ToggleSalt.Content = "Show Salt";
+                btn_ToggelSalt.Content = rsLoader.GetString("sett_txb_ShowSalt_show");
             }
         }
 
@@ -94,12 +101,12 @@ namespace PassGen
         {
             if (txt_Salt.Text.Length < 8)
             {
-                var mBoxLength = new Windows.UI.Popups.MessageDialog("Your Salt needs more than 8 characters.");
+                var mBoxLength = new Windows.UI.Popups.MessageDialog(rsLoader.GetString("SaltToShortDialog"));
                 await mBoxLength.ShowAsync();
                 return;
             }
 
-            var messageBoxChange = new ContentDialog() { Title = "Change Salt", Content = "If you change the salt, diffrent passwords will be created. Are you sure to change it?", PrimaryButtonText = "Save", SecondaryButtonText = "Cancel" };
+            var messageBoxChange = new ContentDialog() { Title = rsLoader.GetString("ChangeSaltDia_Titel"), Content = rsLoader.GetString("ChangeSaltDia_Content"), PrimaryButtonText = rsLoader.GetString("ChangeSaltDia_Primary"), SecondaryButtonText = rsLoader.GetString("ChangeSaltDia_Secondary") };
             var result = await messageBoxChange.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
@@ -134,6 +141,12 @@ namespace PassGen
             passGenerator.UpdatePwLen(settings.PwLength);
 
             txt_PwLength.Text = settings.PwLength.ToString();
+        }
+
+        private void btn_MoreInfo_Click(object sender, RoutedEventArgs e)
+        {
+            var frame = Window.Current.Content as Frame;
+            frame.Navigate(typeof(MoreInfoView));
         }
     }
 }

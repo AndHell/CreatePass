@@ -14,6 +14,8 @@ namespace PassGen
         public bool UseAlphaNumChars { get; private set; }
         public bool UseSpecialChars { get; private set; }
 
+        public bool IsFirstLaunch { get; private set; }
+
         public string Salt { get; private set; }
 
         public Settings()
@@ -88,6 +90,17 @@ namespace PassGen
                 salt = localSettings.Values["salt"];
             }
             Salt = (string)salt;
+        }
+
+        private void LoadOrCreateFirstLoad()
+        {
+            var firstload = localSettings.Values["firstLoad"];
+            if (firstload == null)
+            {
+                localSettings.Values["firstLoad"] = true;
+                firstload = localSettings.Values["firstLoad"];
+            }
+            IsFirstLaunch = (bool)firstload;
         }
 
         public void UpdatePwLen(int pwLen)
