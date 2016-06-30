@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="CreatePass.MoreInfoView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CreatePass"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Pivot Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <PivotItem x:Uid="more_piv_About">
+            <!--Version
+                        Info Entwickler (Seite /(Email?))
+                        Github Link
+                        Review / Feedback Link-->
+            <StackPanel Orientation="Vertical">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Margin" Value="0,10,0,0"/>
+                    </Style>
+                    <Style TargetType="HyperlinkButton">
+                        <Setter Property="Margin" Value="0,10,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Name="more_txt_Version"></TextBlock>
+                <HyperlinkButton x:Uid="more_githubURL"  NavigateUri="https://github.com/AndHell/CreatePass"></HyperlinkButton>
+                <HyperlinkButton x:Uid="more_devWebSite" NavigateUri="https://andhell.github.io"></HyperlinkButton>
+                <HyperlinkButton x:Uid="more_RateApp" NavigateUri="ms-windows-store://review/?ProductId=9nblggh5xtl8"/>
+            </StackPanel>
+            
+        </PivotItem>
+        <PivotItem x:Uid="more_piv_Help">
+            <StackPanel Orientation="Vertical">
+                <HyperlinkButton x:Uid="more_githubWiki"  NavigateUri="https://github.com/AndHell/CreatePass/wiki" Margin="0,10,0,0"></HyperlinkButton>
+                <Button x:Uid="more_btn_SendEmail" Name="btn_SendEmail" Click="btn_SendEmail_Click" HorizontalAlignment="Stretch"></Button>
+                
+            </StackPanel>
+        </PivotItem>
+    </Pivot>
+</Page>

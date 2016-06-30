@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="21827Hellenbrand.GeneratePass" Publisher="CN=499C4197-8CD8-496C-BD6A-0D51D887462F" Version="1.1.4.0" />
+  <Identity Name="21827Hellenbrand.GeneratePass" Publisher="CN=499C4197-8CD8-496C-BD6A-0D51D887462F" Version="2.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="2dda2b29-0102-4eba-9d3d-3ffbaf4e156c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>CreatePass</DisplayName>

@@ -117,17 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ChangeSaltDia_Content" xml:space="preserve">
-    <value>Wenn du den Synchronisierungsschlüssel änderst, erhältst Zukunft andere Passwörter. Bist du sicher, dass du ihn ändern willst?</value>
+  <data name="dia_ChangeSalt_Content" xml:space="preserve">
+    <value>Durch das ändern des Sync-Keys werden sie neue Passwörter erhalten. Sind sie sich sicher, dass sie fortfahren möchten?</value>
   </data>
-  <data name="ChangeSaltDia_Primary" xml:space="preserve">
+  <data name="dia_ChangeSalt_Primary" xml:space="preserve">
     <value>Speichern</value>
   </data>
-  <data name="ChangeSaltDia_Secondary" xml:space="preserve">
+  <data name="dia_ChangeSalt_Secondary" xml:space="preserve">
     <value>Abbrechen</value>
   </data>
-  <data name="ChangeSaltDia_Titel" xml:space="preserve">
-    <value>Synchronisierungsschlüssel</value>
+  <data name="dia_ChangeSalt_Title" xml:space="preserve">
+    <value>Sync-Key ändern</value>
   </data>
   <data name="main_piv_Password.Header" xml:space="preserve">
     <value>Passwort</value>
@@ -135,55 +135,109 @@
   <data name="main_piv_Settings.Header" xml:space="preserve">
     <value>Einstellungen</value>
   </data>
-  <data name="MasterKeyToShortDialog" xml:space="preserve">
-    <value>Dein Passwort braucht mindestens 8 Zeichen.</value>
+  <data name="dia_MasterKeyToShort" xml:space="preserve">
+    <value>Dein Masterkey braucht mehr als 8 Zeichen.</value>
   </data>
-  <data name="pass_btn_Copy.Content" xml:space="preserve">
+  <data name="main_btn_Copy.Content" xml:space="preserve">
     <value>Kopieren</value>
   </data>
-  <data name="pass_btn_Generate.Content" xml:space="preserve">
+  <data name="main_btn_Generate.Content" xml:space="preserve">
     <value>Erstellen</value>
   </data>
-  <data name="pass_txt_MasterKey.Text" xml:space="preserve">
+  <data name="main_txt_MasterKey.Text" xml:space="preserve">
     <value>Masterkey</value>
   </data>
-  <data name="pass_txt_SiteHint.Text" xml:space="preserve">
-    <value>Seite:</value>
+  <data name="main_txt_Sitekey.Text" xml:space="preserve">
+    <value>Seite</value>
   </data>
-  <data name="SaltToShortDialog" xml:space="preserve">
-    <value>Dein Schlüssel braucht mindestens 8 Zeichen.</value>
+  <data name="dia_SaltToShort" xml:space="preserve">
+    <value>Dein Sync-Key braucht mehr als 8 Zeichen.</value>
   </data>
-  <data name="sett_txb_AutoCopy.Text" xml:space="preserve">
-    <value>Automatisch kopieren</value>
+  <data name="main_txt_AutoCopy.Text" xml:space="preserve">
+    <value>Autocopy</value>
   </data>
-  <data name="sett_txb_Chars.Text" xml:space="preserve">
-    <value>Zeichen:</value>
+  <data name="main_txt_Chars.Text" xml:space="preserve">
+    <value>Zeichen</value>
   </data>
-  <data name="sett_txb_SaveSalt.Content" xml:space="preserve">
+  <data name="main_txt_SaveSalt.Content" xml:space="preserve">
     <value>Speichern</value>
   </data>
-  <data name="sett_txb_ShowSalt.Content" xml:space="preserve">
-    <value>Zeige Sync-Key</value>
+  <data name="main_txt_ShowSalt.Content" xml:space="preserve">
+    <value>Sync-Key zeigen</value>
   </data>
-  <data name="sett_txb_ShowSalt_hide" xml:space="preserve">
-    <value>Verstecke Sync-Key</value>
+  <data name="main_txt_ShowSalt_hide" xml:space="preserve">
+    <value>Verstecken</value>
   </data>
-  <data name="sett_txb_ShowSalt_show" xml:space="preserve">
-    <value>Zeige Sync-Key</value>
+  <data name="main_txt_ShowSalt_show" xml:space="preserve">
+    <value>Sync-Key zeigen</value>
   </data>
-  <data name="sett_txt_PassLeng.Text" xml:space="preserve">
-    <value>Passwortlänge</value>
+  <data name="main_txt_PassLeng.Text" xml:space="preserve">
+    <value>Passwort länge</value>
   </data>
-  <data name="sett_btn_OpenMoreInfo.content" xml:space="preserve">
+  <data name="main_ab_OpenMoreInfo.Label" xml:space="preserve">
     <value>Mehr</value>
   </data>
-  <data name="more_txt_donationCoffee.Text" xml:space="preserve">
-    <value>Ohne den morgendlichen Kaffee würde ich mich wohl kaum dazu motiviert bekommen, neben der Schule noch etwas zu programmieren. Also warum mir nicht mal eine Freude machen und einen Kaffee ausgeben. Denn ein glücklicher Entwickler ist ein guter Entwickler. Kaffee kostet am Kiosk neben meiner Schule nur ca. 2 € (:</value>
+  <data name="addsite_btn_Add.Content" xml:space="preserve">
+    <value>Speichern</value>
   </data>
-  <data name="more_txt_donationViaBitcoin.Text" xml:space="preserve">
-    <value>Spenden über Bitcoin werden an andere Open-Source Projekte meiner Wahl weiter gegeben.</value>
+  <data name="addsite_txt_AddNew.Text" xml:space="preserve">
+    <value>Seite Hinzufügen</value>
   </data>
-  <data name="more_txt_donationWith.Text" xml:space="preserve">
-    <value>Überstütze mich über:</value>
+  <data name="dia_AddSitekeyFailed" xml:space="preserve">
+    <value>Speichern fehlgeschlage.</value>
+  </data>
+  <data name="dia_SiteKeyDecryptionFailed_Content" xml:space="preserve">
+    <value>Ein oder mehrer Einträge konnten nicht entschlüsselt werden. Bitte Kontrolliere den Pin.</value>
+  </data>
+  <data name="dia_SiteKeyDecryptionFailed_Title" xml:space="preserve">
+    <value>Entschlüsslungsfehler</value>
+  </data>
+  <data name="dia_SiteKeyPinToShort" xml:space="preserve">
+    <value>Dein Pin braucht mehr als 4 Zeichen.</value>
+  </data>
+  <data name="main_ab_AddSite.Label" xml:space="preserve">
+    <value>Neu</value>
+  </data>
+  <data name="main_ab_LockSitekeys.Label" xml:space="preserve">
+    <value>Schließen</value>
+  </data>
+  <data name="main_ab_ResetPW.Label" xml:space="preserve">
+    <value>Zurücksetzten</value>
+  </data>
+  <data name="main_btn_QRCodePW.Content" xml:space="preserve">
+    <value>QR Code</value>
+  </data>
+  <data name="main_btn_siteListUnlock.Content" xml:space="preserve">
+    <value>Öffnen</value>
+  </data>
+  <data name="main_mf_deleteSiteKey.Text" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="main_piv_Sites.Header" xml:space="preserve">
+    <value>Seiten</value>
+  </data>
+  <data name="main_txt_sitekeyPin.Text" xml:space="preserve">
+    <value>Pin</value>
+  </data>
+  <data name="more_devWebSite.Content" xml:space="preserve">
+    <value>Webseite öffnen</value>
+  </data>
+  <data name="more_githubURL.Content" xml:space="preserve">
+    <value>Code auf Github öffnen</value>
+  </data>
+  <data name="more_piv_About.Header" xml:space="preserve">
+    <value>Über</value>
+  </data>
+  <data name="more_piv_Help.Header" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
+  <data name="more_RateApp.Content" xml:space="preserve">
+    <value>App bewerten</value>
+  </data>
+  <data name="more_githubWiki.Content" xml:space="preserve">
+    <value>Online Hilfe öffnen</value>
+  </data>
+  <data name="more_btn_SendEmail.Content" xml:space="preserve">
+    <value>Email senden</value>
   </data>
 </root>

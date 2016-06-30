@@ -117,17 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ChangeSaltDia_Content" xml:space="preserve">
+  <data name="dia_ChangeSalt_Content" xml:space="preserve">
     <value>If you change the Sync-Key, diffrent passwords will be created. Are you sure that you want to change it?</value>
   </data>
-  <data name="ChangeSaltDia_Primary" xml:space="preserve">
+  <data name="dia_ChangeSalt_Primary" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="ChangeSaltDia_Secondary" xml:space="preserve">
+  <data name="dia_ChangeSalt_Secondary" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="ChangeSaltDia_Titel" xml:space="preserve">
-    <value>Change Salt</value>
+  <data name="dia_ChangeSalt_Title" xml:space="preserve">
+    <value>Change Sync-Key</value>
   </data>
   <data name="main_piv_Password.Header" xml:space="preserve">
     <value>Password</value>
@@ -135,55 +135,109 @@
   <data name="main_piv_Settings.Header" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="MasterKeyToShortDialog" xml:space="preserve">
+  <data name="dia_MasterKeyToShort" xml:space="preserve">
     <value>Your Masterkey needs more than 8 characters.</value>
   </data>
-  <data name="pass_btn_Copy.Content" xml:space="preserve">
+  <data name="main_btn_Copy.Content" xml:space="preserve">
     <value>Copy</value>
   </data>
-  <data name="pass_btn_Generate.Content" xml:space="preserve">
+  <data name="main_btn_Generate.Content" xml:space="preserve">
     <value>Generate</value>
   </data>
-  <data name="pass_txt_MasterKey.Text" xml:space="preserve">
+  <data name="main_txt_MasterKey.Text" xml:space="preserve">
     <value>Masterkey</value>
   </data>
-  <data name="pass_txt_SiteHint.Text" xml:space="preserve">
+  <data name="main_txt_Sitekey.Text" xml:space="preserve">
     <value>Sitekey</value>
   </data>
-  <data name="SaltToShortDialog" xml:space="preserve">
+  <data name="dia_SaltToShort" xml:space="preserve">
     <value>Your Sync-Key needs more than 8 characters.</value>
   </data>
-  <data name="sett_txb_AutoCopy.Text" xml:space="preserve">
+  <data name="main_txt_AutoCopy.Text" xml:space="preserve">
     <value>Autocopy</value>
   </data>
-  <data name="sett_txb_Chars.Text" xml:space="preserve">
+  <data name="main_txt_Chars.Text" xml:space="preserve">
     <value>Chars</value>
   </data>
-  <data name="sett_txb_SaveSalt.Content" xml:space="preserve">
+  <data name="main_txt_SaveSalt.Content" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="sett_txb_ShowSalt.Content" xml:space="preserve">
+  <data name="main_txt_ShowSalt.Content" xml:space="preserve">
     <value>Show Sync-Key</value>
   </data>
-  <data name="sett_txb_ShowSalt_hide" xml:space="preserve">
+  <data name="main_txt_ShowSalt_hide" xml:space="preserve">
     <value>Hide Sync-Key</value>
   </data>
-  <data name="sett_txb_ShowSalt_show" xml:space="preserve">
+  <data name="main_txt_ShowSalt_show" xml:space="preserve">
     <value>Show Sync-Key</value>
   </data>
-  <data name="sett_txt_PassLeng.Text" xml:space="preserve">
+  <data name="main_txt_PassLeng.Text" xml:space="preserve">
     <value>Password length</value>
   </data>
-  <data name="sett_btn_OpenMoreInfo.Content" xml:space="preserve">
+  <data name="main_ab_OpenMoreInfo.Label" xml:space="preserve">
     <value>More</value>
   </data>
-  <data name="more_txt_donationCoffee.Text" xml:space="preserve">
-    <value>Without a coffee in the morning it would be really hard for me to find some motivation for working on this app beside school business. So why don’t make me happy and buy me a coffee. And a happy developer always is a good developer. Coffee only cost about 2 USD at the kiosk near my school (:</value>
+  <data name="addsite_btn_Add.Content" xml:space="preserve">
+    <value>Add</value>
   </data>
-  <data name="more_txt_donationViaBitcoin.Text" xml:space="preserve">
-    <value>Money received in Bitcoins is going to be donated to other Open-Source projects of my choice.</value>
+  <data name="addsite_txt_AddNew.Text" xml:space="preserve">
+    <value>Add new site</value>
   </data>
-  <data name="more_txt_donationWith.Text" xml:space="preserve">
-    <value>Donate using:</value>
+  <data name="dia_AddSitekeyFailed" xml:space="preserve">
+    <value>Saving the new key failed. Please try again.</value>
+  </data>
+  <data name="dia_SiteKeyDecryptionFailed_Content" xml:space="preserve">
+    <value>One or more keys could not be decrpyted. Please check your key.</value>
+  </data>
+  <data name="dia_SiteKeyDecryptionFailed_Title" xml:space="preserve">
+    <value>Decryption Error</value>
+  </data>
+  <data name="dia_SiteKeyPinToShort" xml:space="preserve">
+    <value>Your Pin needs more than 4 characters.</value>
+  </data>
+  <data name="main_ab_AddSite.Label" xml:space="preserve">
+    <value>Add Sitekey</value>
+  </data>
+  <data name="main_ab_LockSitekeys.Label" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="main_ab_ResetPW.Label" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="main_btn_QRCodePW.Content" xml:space="preserve">
+    <value>QR Code</value>
+  </data>
+  <data name="main_btn_siteListUnlock.Content" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="main_mf_deleteSiteKey.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="main_piv_Sites.Header" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="main_txt_sitekeyPin.Text" xml:space="preserve">
+    <value>Pin</value>
+  </data>
+  <data name="more_devWebSite.Content" xml:space="preserve">
+    <value>Open Developers Website</value>
+  </data>
+  <data name="more_githubURL.Content" xml:space="preserve">
+    <value>Show Code on Github</value>
+  </data>
+  <data name="more_piv_About.Header" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="more_piv_Help.Header" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="more_RateApp.Content" xml:space="preserve">
+    <value>Rate the App</value>
+  </data>
+  <data name="more_githubWiki.Content" xml:space="preserve">
+    <value>Open CreatePass Wiki</value>
+  </data>
+  <data name="more_btn_SendEmail.Content" xml:space="preserve">
+    <value>Get Help per Email</value>
   </data>
 </root>
